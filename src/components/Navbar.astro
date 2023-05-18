@@ -1,0 +1,56 @@
+---
+export interface Props {}
+
+const {} = Astro.props;
+---
+
+<div
+  class="w-screen h-20 outline outline-1 outline-gray-300 flex flex-row justify-between items-center px-56"
+>
+  <div class="flex flex-row justify-center items-center hover:cursor-pointer">
+    <a href="/">
+      <h1 class="text-3xl font-bold text-gray-800 mb-1">
+        Epsonia::<span class="font-light text-md">docs</span>
+      </h1>
+    </a>
+  </div>
+
+  <div class="flex flex-row gap-x-28 items-center">
+    <a href="/docs">
+      <h1
+        class="text-lg font-medium hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Documentation
+      </h1>
+    </a>
+    <a href="/about">
+      <h1
+        class="text-lg font-medium hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        About
+      </h1>
+    </a>
+    <a href="/competition">
+      <h1
+        class="text-lg font-medium hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Competition
+      </h1>
+    </a>
+    <a href="/docs/getting-started">
+      <button
+        class="text-lg font-medium border-none bg-none outline outline-2 outline-gray-800 rounded-lg p-2 px-4 hover:scale-105 delay-150 transition-all duration-200 ease-in-out hover:cursor-pointer"
+        >Getting Started</button
+      >
+    </a>
+    <a href="https://github.com/epsonia/epsonia-rs" target="_blank">
+      <img
+        src="/github.png"
+        alt="github"
+        class="text-gray-800 hover:text-gray-600 hover:cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out"
+        width="44"
+        height="44"
+      />
+    </a>
+  </div>
+</div>
